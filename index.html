@@ -4,62 +4,69 @@
 	<meta charset="UTF-8">
 	<title>Fernando Rámila</title>
 	<link rel="stylesheet" href="css/style.css">
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
 	<link rel="icon" type="image/png" href="images/logoWebPage.png">
 </head>
 <body>
 	<!-- Header section -->
 	
-	<header>
-		<nav>
-			<div>
-				<figure class="main-logo">
-					<img src="images/logoWebPage.png" alt="Web page logo">
-				</figure>
-			</div>
-			<ul>
-				<li>
-					<a href="portfolio.html">Portafolio</a>
-				</li>
-				<li>
-					<a href="experiencie.html">Experiencia</a>
-				</li>
-				<li>
-					<a href="contact.html">Trabajemos Juntos</a>
-				</li>
-			</ul>
-		</nav>
+	<header class="header">
+		<div>
+			<figure class="main-logo">
+				<img src="images/logoWebPage.png" alt="Web page logo">
+			</figure>
+			<nav class="nav-menu">
+				<ul>
+					<li>
+						<a class="nav-link" href="portfolio.html">Portafolio</a>
+					</li>
+					<li>
+						<a class="nav-link" href="experiencie.html">Experiencia</a>
+					</li>
+					<li>
+						<a class="nav-link" href="contact.html">Trabajemos Juntos</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<!-- Sections -->
+	<!-- Hero section -->
 	
-	<section>
-			<h1>Hola! Soy <strong>Fernando Ramila Lagunes.</strong> Soy Quality Engineer en Accenture. <br> <strong> Apasionado de tecnologias</strong> de creacion de software</h1>
-			<img src="images/frontImage.jpg" alt="Front image"> Imagen de portada
+	<section class="hero">
+		<h1>Hola! Soy <strong>Fernando Ramila Lagunes.</strong> Soy Quality Engineer en Accenture. <br> <strong> Apasionado de tecnologias</strong> de creacion de software</h1>
+		<img src="images/frontImage.jpg" alt="Front image"> Imagen de portada
 	</section>
-	<section id="portfolio">
+
+	<!-- portfolio section -->
+	
+	<section class="portfolio">
 		<h2>Portafolio (Proyectos Destacados)</h2>
-		<article>
-			<h3>Proyecto de bienes Raices</h3>
-			<h5>Frontend (HTML5/CSS3/PHP)</h5>
-			<p><strong>Fecha:</strong> 01/07/2020</p>
-			<p><strong>Repositorio:</strong> https://github.com/FerchoRL/bienesRaicesUdemy</p>
-			<p>Este proyecto empieza con las bases de un frontend (HTML5 & CSS3). Tambien uso un poco de php para tratar de reutilizar codigo en mis archivos. El proyecto se basa en el curso de Udemy: "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL". Me falta incluir el uso de BD con php y MySQL, JS & AJAX. Pero decidi ir paso a paso en la creacion de un sitio web. Actualmente tengo conocimientos de HTML5(Dividir los archivos en sus respectivas secciones) y CSS3(Flex, Grid, y propiedades de etiquetas.)</p>
-			<img src="images/realAssets.jpg" alt="Real Assets image">
-		</article>
-	</section>
-	<section id="experiencie">
-		<h2>Mas sobre mi experiencia</h2>
-		<article>
-			<figure>
-				<img src="images/Accenture-Job.jpg" alt="Accenture image">
+		<article class="project">
+			<h3 class="project-title">Proyecto de bienes Raices</h3>
+			<h5 class="project-tools">Frontend (HTML5/CSS3/PHP)</h5>
+			<p class="project-date"><strong>Fecha:</strong> 01/07/2020</p>
+			<p class="link-repo"><strong>Repositorio:</strong> https://github.com/FerchoRL/bienesRaicesUdemy</p>
+			<p class="project-description">Este proyecto empieza con las bases de un frontend (HTML5 & CSS3). Tambien uso un poco de php para tratar de reutilizar codigo en mis archivos. El proyecto se basa en el curso de Udemy: "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL". Me falta incluir el uso de BD con php y MySQL, JS & AJAX. Pero decidi ir paso a paso en la creacion de un sitio web. Actualmente tengo conocimientos de HTML5(Dividir los archivos en sus respectivas secciones) y CSS3(Flex, Grid, y propiedades de etiquetas.)</p>
+			<figure class="project-image-container">
+				<img src="images/realAssets.jpg" alt="Real Assets image">
 			</figure>
-			<h3>Quality Engineer en Accenture</h3>
-			<p>Me desarrolle en la creacion de scripts para testear APIs. Maneje herramientas como Jenkins, git, creacion de funciones con JS, karate framework, contacto directo con developer y Manager del cliente para reportar defectos en las APIs testeadas.</p>
-			<a href="#">Sitio oficial Accenture</a>
 		</article>
 	</section>
-	<section id="contact">
-		<form action="/suscription/">
+	<section class="experiencie">
+		<h2>Mas sobre mi experiencia</h2>
+		<article class="job">
+			<figure class="job-container-image">
+				<img class="job-image" src="images/Accenture-Job.jpg" alt="Accenture image">
+			</figure>
+			<h3 class="job-title">Quality Engineer en Accenture</h3>
+			<p class="job-description">Me desarrolle en la creacion de scripts para testear APIs. Maneje herramientas como Jenkins, git, creacion de funciones con JS, karate framework, contacto directo con developer y Manager del cliente para reportar defectos en las APIs testeadas.</p>
+			<a class="job-url" href="#">Sitio oficial Accenture</a>
+		</article>
+	</section>
+	<section class="contact">
+		<form action="/suscription/" class="form-email">
 			<h3>¿Codeamos juntos?</h3>
 			<input type="text" id="email" placeholder="Hechame tu email :)">
 			<input type="submit" value="Enviar">
@@ -68,6 +75,6 @@
 
 	<!-- Footer section -->
 	
-	<footer>footer</footer>
+	<footer class="footer">footer</footer>
 </body>
 </html>
