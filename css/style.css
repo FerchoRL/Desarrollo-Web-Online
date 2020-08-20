@@ -1,3 +1,83 @@
+body{
+	font-family: 'Source Serif Pro', serif;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+	font-size: 40px;
+	line-height: 1.5em;
+	color: white;
+	margin: 0;
+}
+
+strong{
+	color: #026fff;
+}
+
+/*Colores*/
+/* gris oscuro: #1d252c*/
+/* gris claro #626262*/
+/* background gris #1b2127*/
+/*Header styles*/
+.header{
+	background-color: #1b2127;
+}
+
+.header a{
+	color: white;
+	text-decoration: none;
+}
+
+.main-logo{
+	margin: 0;
+}
+
 .main-logo img{
 	width: 6%;
 }
+
+.nav-menu ul{
+	margin: 0;
+}
+
+/*Main sections styles*/
+.hero{
+	margin-top: 2rem;
+	height: 350px;
+	background-image: url(../images/frontImage.jpg);
+	background-position: right;
+	background-size: 800px 350px;
+	background-repeat: no-repeat;
+	background-color: #1b2127;
+}
+
+.hero h1{
+	margin: 0 800px 0 0;
+}
+
+/*Portfolio style*/
+.portfolio{
+	background-color: #fafafa;
+}
+
+.project{
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 2rem 1rem;
+	padding: 1rem;
+	background-color: white;
+}
+
+.project-container{
+	width: 500px;
+}
+
+.project-image-container{
+	width: 500px;
+}
+
+/*Header styles*/
