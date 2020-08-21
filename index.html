@@ -12,34 +12,32 @@
 	<!-- Header section -->
 	
 	<header class="header">
-		<div>
-			<figure class="main-logo">
-				<img src="images/logoWebPage.png" alt="Web page logo">
-			</figure>
-			<nav class="nav-menu">
-				<ul>
-					<li>
-						<a class="nav-link" href="portfolio.html">Portafolio</a>
-					</li>
-					<li>
-						<a class="nav-link" href="experiencie.html">Experiencia</a>
-					</li>
-					<li>
-						<a class="nav-link" href="contact.html">Trabajemos Juntos</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<figure class="main-logo">
+			<img src="images/logoWebPage.png" alt="Web page logo">
+		</figure>
+		<nav class="nav-menu">
+			<ul>
+				<li>
+					<a class="nav-link" href="portfolio.html">Portafolio</a>
+				</li>
+				<li>
+					<a class="nav-link" href="experiencie.html">Experiencia</a>
+				</li>
+				<li>
+					<a class="nav-link" href="contact.html">Trabajemos Juntos</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 
 	<!-- Sections -->
 	<!-- Hero section -->
 	
 	<section class="hero">
-		<h1>Hola! Soy <strong>Fernando Ramila Lagunes.</strong> <br>Soy <strong>Quality Engineer</strong> en Accenture. <br> <strong> Apasionado en crear</strong> Paginas Web </h1>
-		<!-- <img src="images/frontImage.jpg" alt="Front image"> Imagen de portada -->
-		
-		
+		<h1 class="text-hero">Hola! Soy <strong>Fernando Ramila Lagunes.</strong> <br>Soy <strong>Quality Engineer</strong> en Accenture. <br> <strong> Apasionado en crear</strong> Paginas Web </h1>
+		<div class="img-hero">
+			<img src="images/frontImage.jpg" alt="Front image">
+		</div>
 	</section>
 
 	<!-- portfolio section -->
@@ -49,9 +47,9 @@
 		<article class="project">
 			<div class="project-container">
 				<h3 class="project-title">Proyecto de bienes Raices</h3>
-				<h5 class="project-tools">Frontend (HTML5/CSS3/PHP)</h5>
+				<h4 class="project-tools">Frontend (HTML5/CSS3/PHP)</h4>
 				<p class="project-date"><strong>Fecha:</strong> 01/07/2020</p>
-				<p class="link-repo"><strong>Repositorio:</strong> https://github.com/FerchoRL/bienesRaicesUdemy</p>
+				<p class="link-repo"><strong>Repositorio:</strong> <a href="https://github.com/FerchoRL/bienesRaicesUdemy"> Bienes raices github</a></p>
 				<p class="project-description">Este proyecto empieza con las bases de un frontend (HTML5 & CSS3). Tambien uso un poco de php para tratar de reutilizar codigo en mis archivos. El proyecto se basa en el curso de Udemy: "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL". Me falta incluir el uso de BD con php y MySQL, JS & AJAX. Pero decidi ir paso a paso en la creacion de un sitio web. Actualmente tengo conocimientos de HTML5(Dividir los archivos en sus respectivas secciones) y CSS3(Flex, Grid, y propiedades de etiquetas.)</p>
 			</div>
 			<figure class="project-image-container">
@@ -62,12 +60,14 @@
 	<section class="experiencie">
 		<h2>Mas sobre mi experiencia</h2>
 		<article class="job">
-			<figure class="job-container-image">
-				<img class="job-image" src="images/Accenture-Job.jpg" alt="Accenture image">
+			<figure class="job-image">
+				<img src="images/Accenture-Job.jpg" alt="Accenture image">
 			</figure>
-			<h3 class="job-title">Quality Engineer en Accenture</h3>
-			<p class="job-description">Me desarrolle en la creacion de scripts para testear APIs. Maneje herramientas como Jenkins, git, creacion de funciones con JS, karate framework, contacto directo con developer y Manager del cliente para reportar defectos en las APIs testeadas.</p>
-			<a class="job-url" href="#">Sitio oficial Accenture</a>
+			<div class="job-info-container">
+				<h3 class="job-title">Quality Engineer en Accenture</h3>
+				<p class="job-description">Me desarrolle en la creacion de scripts para testear APIs. Maneje herramientas como Jenkins, git, creacion de funciones con JS, karate framework, contacto directo con developer y Manager del cliente para reportar defectos en las APIs testeadas.</p>
+				<a class="job-url" href="#">Sitio oficial Accenture</a>
+			</div>
 		</article>
 	</section>
 	<section class="contact">
@@ -80,6 +80,17 @@
 
 	<!-- Footer section -->
 	
-	<footer class="footer">footer</footer>
+	<footer>
+		<div class="footer">
+			<div class="footer-begin">
+				<p>Curso de desarrollo web online en 2020</p>
+				<img src="images/platzi.png" alt="Platzi footer">
+			</div>
+			<div class="footer-end">
+				<p>Designed with love <\3 by: </p>
+				<a href="https://twitter.com/FerchoRL12" target="_blank">@FerchoRL12</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
